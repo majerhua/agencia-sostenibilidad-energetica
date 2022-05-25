@@ -1,0 +1,55 @@
+.bg-navbar-green {
+  background-color: #fff !important;
+}
+
+body {
+  background-color: #264661 !important;
+}
+
+.logo-text {
+  margin-left: 30px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.container-ib {
+  width: 500px;
+}
+
+.card {
+  box-shadow: rgb(3 47 137 / 10%) 0px 4px 12px !important;
+  border: 1px solid rgb(242, 244, 248);
+  border-radius: 20px;
+  width: 500px;
+}
+
+
+.label {
+  font-size: 0.95em;
+  color: #162233 !important;
+} 
+
+.bg-color-buscar {
+  background-color: #94C11F;
+  border-color: #94C11F;
+}
+
+.bg-color-buscar:hover {
+  background-color: #779b15;
+  border-color: #779b15;
+}
+
+.bg-color-limpiar {
+  background-color: #EF8335;
+  border-color: #EF8335;
+}
+
+.bg-color-limpiar:hover {
+  background-color: #a85c26;
+  border-color: #a85c26;
+}
+
+.alert{
+  width: 500px;
+}
