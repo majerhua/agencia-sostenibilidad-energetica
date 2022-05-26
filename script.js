@@ -12,18 +12,25 @@ const inputCodigo = document.querySelector("#inputCodigo");
 const btnBuscar = document.querySelector("#btnBuscar");
 const btnLimpiar = document.querySelector("#btnLimpiar");
 
+const loader = document.querySelector("#loader");
 
-const search_solicitude = () => {
+loader.style.display = 'none';
+
+const search_solicitude = async () => {
   if(inputCodigo.value !== ''){
-    if(inputCodigo.value === 'cod001') {
-      proceso.innerText = 'Proyectos fotovoltaicos para empresas';
-      titulo.innerText = '#13989';
-      numero.innerText = '13989';
-      estado.innerText = 'Por hacer';
-      creador.innerText = 'DEMO CLIENTE';
-      fecha.innerText = '2020-07-29 21:31:29';
-      ultima.innerText = '2020-07-30 19:56:15';
-      descripcion.innerText = 'qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem';
+    const solicitude = solicitudes.find(element => element.numero === inputCodigo.value);
+    loader.style.display = 'block';
+    await sleep();
+
+    if(solicitude) {
+      proceso.innerText = solicitude.proceso;
+      titulo.innerText = solicitude.titulo;
+      numero.innerText = solicitude.numero;
+      estado.innerText = solicitude.estado;
+      creador.innerText = solicitude.creador;
+      fecha.innerText = solicitude.fecha;
+      ultima.innerText = solicitude.ultima;
+      descripcion.innerText = solicitude.descripcion;
       alertify.success('Se encontró la solicitud.');
     } else {
       proceso.innerText = '';
@@ -36,6 +43,7 @@ const search_solicitude = () => {
       descripcion.innerText = '';
       alertify.error('No existe la solicitud que usted está buscando.');    
     }
+    loader.style.display = 'none';
   }else {
     alertify.warning('El campo código de solicitud no debe estar vacío.');
     inputCodigo.focus(); 
@@ -43,7 +51,15 @@ const search_solicitude = () => {
 }
 
 
-btnBuscar.addEventListener('click', ()=> {
+const sleep = async ()=> {
+  return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve('success');
+    }, 1000)
+  });
+}
+
+btnBuscar.addEventListener('click', async ()=> {
   search_solicitude();
 });
 
