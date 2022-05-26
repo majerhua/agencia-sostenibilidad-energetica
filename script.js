@@ -24,7 +24,7 @@ const search_solicitude = () => {
       fecha.innerText = '2020-07-29 21:31:29';
       ultima.innerText = '2020-07-30 19:56:15';
       descripcion.innerText = 'qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem';
-      alertify.success('Se encontro la solicitud.');
+      alertify.success('Se encontró la solicitud.');
     } else {
       proceso.innerText = '--';
       titulo.innerText = '--';
@@ -37,7 +37,7 @@ const search_solicitude = () => {
       alertify.error('No existe la solicitud que usted está buscando.');    
     }
   }else {
-    alertify.warning('El campo código de solicitud no debe estar vacio.');
+    alertify.warning('El campo código de solicitud no debe estar vacío.');
     inputCodigo.focus(); 
   }
 }

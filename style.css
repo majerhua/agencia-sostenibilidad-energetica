@@ -25,12 +25,14 @@ body {
   border-radius: 20px;
   width: 900px;
   background-color:rgba(17,29,46,.85);
+  padding: 15px 20px !important;  
 }
 
 
 .label {
   font-size: 1em;
   color: #aaa !important;
+  font-weight: bold !important;
 } 
 
 .txt-result {
@@ -38,26 +40,29 @@ body {
   color: #fff !important;
 }
 
-.bg-color-buscar {
-  background-color: #94C11F;
-  border-color: #94C11F;
-}
-
-.bg-color-buscar:hover {
-  background-color: #779b15;
-  border-color: #779b15;
-}
-
-.bg-color-limpiar {
-  background-color: #EF8335;
-  border-color: #EF8335;
-}
-
-.bg-color-limpiar:hover {
-  background-color: #a85c26;
-  border-color: #a85c26;
-}
-
 .alert{
   width: 500px;
+}
+
+.gTkoGA {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.gTkoGA-2 {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.title-card {
+  font-size: 1.3em;
+  font-weight: bold;
 }
