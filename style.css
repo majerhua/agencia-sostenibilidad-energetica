@@ -3,7 +3,9 @@
 }
 
 body {
-  background-color: #264661 !important;
+  background-color: #fff !important;
+  background-image: url('./img/fondo.png');
+  font-family: 'Montserrat' !important;
 }
 
 .logo-text {
@@ -14,21 +16,27 @@ body {
 }
 
 .container-ib {
-  width: 500px;
+  width: 680px;
 }
 
 .card {
   box-shadow: rgb(3 47 137 / 10%) 0px 4px 12px !important;
-  border: 1px solid rgb(242, 244, 248);
+  border: 1px solid rgba(17,29,46,.85);
   border-radius: 20px;
-  width: 500px;
+  width: 900px;
+  background-color:rgba(17,29,46,.85);
 }
 
 
 .label {
-  font-size: 0.95em;
-  color: #162233 !important;
+  font-size: 1em;
+  color: #aaa !important;
 } 
+
+.txt-result {
+  font-size: 0.9em;
+  color: #fff !important;
+}
 
 .bg-color-buscar {
   background-color: #94C11F;
