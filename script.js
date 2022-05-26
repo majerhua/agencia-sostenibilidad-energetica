@@ -26,14 +26,14 @@ const search_solicitude = () => {
       descripcion.innerText = 'qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem';
       alertify.success('Se encontró la solicitud.');
     } else {
-      proceso.innerText = '--';
-      titulo.innerText = '--';
-      numero.innerText = '--';
-      estado.innerText = '--';
-      creador.innerText = '--';
-      fecha.innerText = '--';
-      ultima.innerText = '--';
-      descripcion.innerText = '--';
+      proceso.innerText = '';
+      titulo.innerText = '';
+      numero.innerText = '';
+      estado.innerText = '';
+      creador.innerText = '';
+      fecha.innerText = '';
+      ultima.innerText = '';
+      descripcion.innerText = '';
       alertify.error('No existe la solicitud que usted está buscando.');    
     }
   }else {
@@ -49,14 +49,14 @@ btnBuscar.addEventListener('click', ()=> {
 
 btnLimpiar.addEventListener('click', ()=> {
   inputCodigo.value = '';
-  proceso.innerText = '--';
-  titulo.innerText = '--';
-  numero.innerText = '--';
-  estado.innerText = '--';
-  creador.innerText = '--';
-  fecha.innerText = '--';
-  ultima.innerText = '--';
-  descripcion.innerText = '--';
+  proceso.innerText = '';
+  titulo.innerText = '';
+  numero.innerText = '';
+  estado.innerText = '';
+  creador.innerText = '';
+  fecha.innerText = '';
+  ultima.innerText = '';
+  descripcion.innerText = '';
 });
 
 

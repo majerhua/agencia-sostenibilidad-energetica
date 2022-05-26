@@ -16,8 +16,14 @@ body {
 }
 
 .container-ib {
-  width: 680px;
+  width: 900px;
+  margin-top: 7px;
 }
+
+  .container-ib > div {
+    width: 600px;
+    margin-left: 0.5em;
+  }
 
 .card {
   box-shadow: rgb(3 47 137 / 10%) 0px 4px 12px !important;
